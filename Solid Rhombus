@@ -1,0 +1,22 @@
+import java.util.*;
+public class SolidRhombus {
+    public static void Solid_Rhombus(int n){
+        for(int lines =1;lines<=n;lines++){
+            //spaces
+            for(int cols=1;cols<=(n-lines);cols++){
+                System.out.print(" ");
+            }
+            for(int cols=1;cols<=n;cols++){
+                System.out.print('*'+" ");
+            }
+            System.out.println();
+        }
+    }
+     public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n= sc.nextInt();
+        Solid_Rhombus(n);
+        
+    }
+}
+
