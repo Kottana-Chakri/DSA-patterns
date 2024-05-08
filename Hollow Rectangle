@@ -1,0 +1,26 @@
+import java.util.*;
+public class HollowRectangle {
+    public static void Hollow_Rectangle(int rows,int cols){
+        for(int lines=1;lines<=rows;lines++){
+            for(int colus=1;colus<=cols;colus++){
+                if(lines==1 || lines ==rows || colus==1 || colus==cols){
+                    System.out.print('*');
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        
+    }
+
+    }
+    public static void main(String ags[]){
+        Scanner sc = new Scanner(System.in);
+            int rows = sc.nextInt();
+            int cols = sc.nextInt();
+            Hollow_Rectangle(rows,cols);
+           
+
+    }
+}
